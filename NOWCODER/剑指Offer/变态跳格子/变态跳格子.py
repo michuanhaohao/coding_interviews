@@ -26,4 +26,4 @@ class Solution:
         if number == 0:
             return number
         else:
-            return pow(2,n-1)
+            return pow(2,number-1)
