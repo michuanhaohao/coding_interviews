@@ -15,7 +15,7 @@ NOTE：给出的所有元素都大于0，若数组大小为0，请返回0。
 class Solution:
     def minNumberInRotateArray(self, rotateArray):
         if len(rotateArray) == 0:
-        	return 0
+            return 0
         if len(rotateArray) == 1:
             return rotateArray[0]
         result = rotateArray[0]
