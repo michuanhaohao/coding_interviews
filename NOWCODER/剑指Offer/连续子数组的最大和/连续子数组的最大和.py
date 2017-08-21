@@ -14,6 +14,20 @@ HZ偶尔会拿些专业问题来忽悠那些非计算机专业的同学。
 你会不会被他忽悠住？(子向量的长度至少是1)
 """
 
+#31 ms	5760K	
+class Solution:
+    def FindGreatestSumOfSubArray(self, array):
+        # write code here
+        max_sum, cur_sum = -0xffffff, 0
+        for i in array:
+            if cur_sum <= 0:
+                cur_sum = i
+            else:
+                cur_sum += i
+            if cur_sum > max_sum:
+                max_sum = cur_sum
+        return max_sum
+
 #43 ms	5768K
 class Solution:
     def FindGreatestSumOfSubArray(self, array):
