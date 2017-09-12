@@ -11,7 +11,7 @@ Created on Mon Sep 11 22:28:47 2017
 ACMer希望你们帮帮他,并把问题更加普遍化,可以很快的求出任意非负整数区间中1出现的次数。
 """
 
-
+#28 ms 5768K 
 class Solution:
     def NumberOf1Between1AndN_Solution(self, n):
         # write code here
@@ -19,8 +19,8 @@ class Solution:
         base = 1
         roun = n
         while roun > 0:
-            roun = roun/10
             weight = roun%10
+            roun = roun/10
             result = result + roun*base
             if weight == 1:
                 result = result+ (n%base) + 1
